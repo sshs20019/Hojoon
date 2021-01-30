@@ -4,12 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MinjaeYumin</title>
-    <style>
-    h1 {text-align: center;}
-    </style>
+    <link rel="stylesheet" href="minjae.css">
+    <audio id='audio_play' src='./click.mp3'></audio>
+    <script type="text/javascript"> 
+      function play() { 
+          var audio = document.getElementById('audio_play'); 
+          if (audio.paused) { 
+              audio.play(); 
+          }else{ 
+              audio.pause(); 
+              audio.currentTime = 0 
+          } 
+      } 
+    </script>
   </head>
   <body>
-    <h1>와이씨 조민제!!!!</h1>
+    <div onclick="play()">
+      <h1>와이씨 조민제!!!!</h1>
+      <h1>와이씨 조민제!!!!</h1>
+      <h1>와이씨 조민제!!!!</h1>
+      <h1>와이씨 조민제!!!!</h1>
+      <h1>와이씨 조민제!!!!</h1>
+      <h1>와이씨 조민제!!!!</h1>
+      <h1>와이씨 조민제!!!!</h1>
+    </div>
     <script src="minjae.js"></script>
   </body>
 </html>
